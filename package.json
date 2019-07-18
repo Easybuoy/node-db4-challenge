@@ -4,7 +4,8 @@
   "description": "## Topics",
   "main": "app",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "express": "^4.17.1",
     "knex": "^0.19.0",
     "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
