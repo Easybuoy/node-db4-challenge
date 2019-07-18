@@ -7,7 +7,7 @@ exports.seed = function(knex) {
       return knex('units').insert([
         {id: 1, name: 'cup'},
         {id: 2, name: 'teaspoon'},
-        {id: 3, colName: 'tablespoons'},
+        {id: 3, name: 'tablespoons'},
       ]);
     });
 };

@@ -4,17 +4,10 @@ exports.up = function(knex) {
 
     tbl
       .integer("instruction_id")
-      .increments()
-      .unique()
       .unsigned()
       .notNullable();
 
     tbl.text("instruction").notNullable();
-
-    tbl
-      .integer("quantity")
-      .unsigned()
-      .notNullable();
 
     tbl
       .integer("recipe_id")
