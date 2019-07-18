@@ -30,8 +30,7 @@ exports.up = function(knex) {
       .onDelete("CASCADE");
 
     tbl
-      .integer("quantity")
-      .unsigned()
+      .float("quantity")
       .notNullable();
   });
 };

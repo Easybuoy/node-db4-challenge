@@ -10,7 +10,14 @@ getRecipesById = async id => {
   return recipe;
 };
 
+getShoppingList = async recipe_id => { console.log(recipe_id)
+  return await db("recipe_ingredients")
+  .join("recipes", "recipe_ingredients.recipe_id", "recipes.id" )
+    .where({ "recipe_ingredients.recipe_id": recipe_id });
+};
+
 module.exports = {
   getRecipes,
-  getRecipesById
+  getRecipesById,
+  getShoppingList
 };
