@@ -7,7 +7,8 @@ exports.seed = function(knex) {
       return knex('recipes').insert([
         {id: 1, name: 'Fruit Pizza'},
         {id: 2, name: 'Apple Spice Oatmeal'},
-        {id: 3, name: 'Almond Rice Pudding'}
+        {id: 3, name: 'Almond Rice Pudding'},
+        {id: 4, name: 'Asian Citrus Chicken'},
       ]);
     });
 };

@@ -1,13 +1,13 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('units').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('units').insert([
+        {id: 1, name: 'cup'},
+        {id: 2, name: 'teaspoon'},
+        {id: 3, colName: 'tablespoons'},
       ]);
     });
 };
