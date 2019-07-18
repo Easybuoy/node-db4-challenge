@@ -5,6 +5,12 @@ getRecipes = async () => {
   return recipes;
 };
 
+getRecipesById = async id => {
+  const recipe = await db("recipes").where({ id })[0];
+  return recipe;
+};
+
 module.exports = {
-  getRecipes
+  getRecipes,
+  getRecipesById
 };
